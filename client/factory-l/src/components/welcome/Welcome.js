@@ -1,7 +1,9 @@
 import React from "react";
-import classes from "./WelcomeImage.module.css";
+import classes from "./Welcome.module.css";
+import CustomButton from "../customButton/CustomButton";
 
-function WelcomeImage() {
+
+function Welcome() {
   return (
     <div className={classes.main}>
       <div className={classes.welcomeArticleAndImage}>
@@ -16,7 +18,8 @@ function WelcomeImage() {
             </p>
           </div>
           <div className={classes.buttons}>
-            <button>Get a Quote</button>
+           <CustomButton 
+           text='Get a Quote'/>
           </div>
         </article>
 
@@ -28,4 +31,4 @@ function WelcomeImage() {
   );
 }
 
-export default WelcomeImage;
+export default Welcome;

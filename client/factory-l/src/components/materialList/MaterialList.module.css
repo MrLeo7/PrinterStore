@@ -3,14 +3,19 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  /* align-items: start; */
 }
 
+.head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
 .wrapper h2 {
   font-family: "Roboto", sans-serif;
   font-size: 40px;
-  margin-left: 80px;
- 
+  /* margin-left: 80px; */
 }
 
 .sectionsDiv {
@@ -20,22 +25,48 @@
   width: 100%;
 }
 
-
-
-
-
-
 .image {
   display: flex;
   justify-content: center;
   margin-bottom: 35px;
 }
-
-hr{
-    width: 90%;
+hr {
+  width: 90%;
 }
 
 @media (max-width: 1200px) {
+
+    .head{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 50px;
+        margin-bottom: 80px;
+    }
+
+  .sectionsDiv {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    margin: 10px;
+  }
+  .sectionsDiv section {
+    margin: auto;
+  }
+  .wrapper h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    margin: 80px auto 50px auto;
+  }
+}
+
+
+
+
+@media (max-width: 480px) {
     .sectionsDiv {
         display: flex;
         flex-direction: column;
@@ -49,6 +80,10 @@ hr{
        margin: auto;
         
       }
+      .sectionsDiv img{
+       scale: 0.9;
+       max-width: 370px;
+      }
 
       .wrapper h2 {
         font-family: "Roboto", sans-serif;
@@ -57,3 +92,4 @@ hr{
       }
       
 }
+

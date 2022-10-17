@@ -57,3 +57,31 @@ hr{
       }
       
 }
+
+@media (max-width: 480px) {
+    .sectionsDiv {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+        width: 100%;
+        margin: 10px;
+        
+      }
+      .sectionsDiv section {
+       margin: auto;
+        
+      }
+      .sectionsDiv img{
+       scale: 0.8;
+       max-width: 370px;
+      }
+
+      .wrapper h2 {
+        font-family: "Roboto", sans-serif;
+        font-size: 40px;
+        margin: 80px auto 50px auto;
+      }
+      
+}
+
