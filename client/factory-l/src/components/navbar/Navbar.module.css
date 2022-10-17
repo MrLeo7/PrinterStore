@@ -1,0 +1,92 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background: rgb(14,26,65);
+    background: radial-gradient(circle, rgba(14,26,65,1) 0%, rgba(6,39,79,1) 100%);
+    height: 100px;
+    align-items: center;
+    
+}
+
+.navLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    margin: 2rem;
+}
+
+.span {
+  position: absolute;
+ 
+  
+  display: block;
+  color: #1bcf6c;
+  font-size: 60px;
+  letter-spacing: 8px;
+  cursor: pointer;
+  top:0px;
+  /* left: 30px; */
+  
+}
+
+.span::before {
+  content: "Factory";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent 0,
+    transparent 2px,
+    rgba(255, 255, 255, 0.658) 2px,
+    rgb(255, 255, 255) 4px
+  );
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+  transition: 1s;
+}
+
+.span::after {
+  content: "Factory L";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0,
+    transparent 2px,
+    rgb(199, 177, 177) 2px,
+    rgb(49, 238, 11) 4px
+  );
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0px;
+  transition: 1s;
+}
+
+.span:hover:before {
+  top: 10px;
+  left: 10px;
+}
+
+.span:hover:after {
+  top: -10px;
+  left: -10px;
+} 
+
+
+@media (max-width:768px){
+    a{
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        margin: 20px;
+    }
+}
