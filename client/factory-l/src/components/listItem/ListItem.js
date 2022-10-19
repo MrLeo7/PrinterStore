@@ -3,8 +3,13 @@ import classes from './ListItem.module.css'
 
 function ListItem(props) {
     
-    const clickHandler=(props)=>{
-
+    const clickHandler=()=>{
+        window.open(props.buttonLink);
+        // console.log(props.buttonLink)
+    }
+    const clickHandlerRoute=()=>{
+        // window.open(props.buttonLink);
+        // console.log(props.buttonLink)
     }
   return (
     <section className={classes.sections}>
@@ -15,7 +20,9 @@ function ListItem(props) {
       <p>
         {props.text}
       </p>
-      {props.button && <button className={classes.button} onClick={clickHandler} >Learn More</button>}
+      
+      {props.buttonLink && <button className={classes.button} onClick={clickHandler} >Learn More</button>}
+      {props.buttonRoute && <button className={classes.button} onClick={clickHandlerRoute} >Learn More</button>}
       <hr></hr>
     </section>
   )

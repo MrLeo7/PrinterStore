@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Gurajada&family=Karla:wght@500&family=Montserrat:wght@300&family=Open+Sans:ital@0;1&family=Roboto+Flex:opsz@8..144&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+.main {
+  width: 20vw;
+  background-color: rgba(128, 128, 128, 0.075);
+  /* height: 500px; */
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main h3 a {
+  color: black;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: 'Noto Sans', sans-serif;
+
+}
+
+.main  a:hover {
+    color:#FF4B5A;
+    border-bottom: solid 2px #FF4B5A;
+  
+  
+  }
+.main h3 {
+  text-align: left;
+  margin-bottom: 0px;
+}
+.main ul {
+  list-style-type: none;
+  text-align: left;
+  font-size: 20px;
+  margin-left: -50px;
+}
+.main li a {
+  color: black;
+
+  font-weight: 600;
+  font-size: 24px;
+}
+.main li {
+  color: black;
+  margin: 10px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 20px;
+}

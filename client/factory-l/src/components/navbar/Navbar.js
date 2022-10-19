@@ -1,18 +1,19 @@
 import React from 'react'
 import classes from './Navbar.module.css'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <nav>
       <h1>
-         {/* <span className={classes.span} >
-        Factory L
-        </span> */}
+        <Link to='/' >FACTORY L</Link>
+        
         </h1>
         <div className={classes.navLinks}>
-            <p> <a href='#marketplace' > MARKETPLACE</a></p>
-            <p> <a href='#home' > ABOUT</a></p>
-            <p> <a href='#materials' > MATERIALS</a></p>
+            <p> <Link to='marketplace' >  MARKETPLACE </Link></p>
+            <p> <Link to='about' >  ABOUT </Link></p>
+            <p> <Link to='materials' >  MATERIALS </Link></p>
+            
         </div>
     </nav>
   )

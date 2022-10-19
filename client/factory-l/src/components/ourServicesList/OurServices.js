@@ -13,15 +13,15 @@ const OurServices = () => {
           height="400"
           text=" Upload customized models for 3D printing service—ensuring durability and strength in materials that result in end-use products meant to last."
           title="Production Parts"
-          button="production"
+          buttonLink="production"
         />
         <ListItem
           image="/assets/finishes.jpg"
           width="400"
           height="400"
-          text="Whether designers prefer polishing, smoothing, dyeing–or a combination of finishing techniques–Shapeways 3D printing services can perfect those final touches with shine, gloss, and color."
+          text="Whether designers prefer polishing, smoothing, dyeing–or a combination of finishing techniques–Factory L 3D printing services can perfect those final touches with shine, gloss, and color."
           title="Finishing"
-          button="finishing"
+          buttonLinkLink="finishing"
         />
 
         <ListItem
@@ -30,7 +30,7 @@ const OurServices = () => {
           height="400"
           text="Take the guesswork out of product development with 3D printing services for high-performance models used in meetings, testing, and perfection of final parts."
           title="Rapid Prototyping"
-          button="prototyping"
+          buttonLink="prototyping"
         />
       </div>
     </div>

@@ -22,6 +22,10 @@ a{
     margin: 2rem;
 }
 
+a:hover{
+  color:#FF4B5A;
+}
+
 .span {
   position: absolute;
  

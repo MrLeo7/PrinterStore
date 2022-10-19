@@ -1,22 +1,25 @@
 import "./App.css";
+import Home from "./pages/Home";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
-import Welcome from "./components/welcome/Welcome";
-import Why3D from "./components/why3D/Why3D";
-import Statistics from "./components/statistics/Statistics";
-import OurServices from "./components/ourServicesList/OurServices";
-import MaterialList from "./components/materialList/MaterialList";
+import Materials from "./pages/Material";
+import Marketplace from "./pages/Marketplace";
+import About from "./pages/About";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Welcome />
-      <Why3D />
-      <Statistics />
-      <OurServices />
-      <MaterialList />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/materials" element={<Materials />} />
+        <Route path="/marketplace" element={<Marketplace />} />
+        <Route path="/about" element={<About />} />
+
+      </Routes>
     </div>
   );
 }
 
 export default App;
+
