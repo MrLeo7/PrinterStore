@@ -10,7 +10,7 @@
 }
 
 .main h3 a {
-  color: black;
+  color:rgb(4, 30, 63);
   font-size: 35px;
   font-weight: 600;
   font-family: 'Noto Sans', sans-serif;
@@ -34,7 +34,7 @@
   margin-left: -50px;
 }
 .main li a {
-  color: black;
+  color: rgb(4, 30, 63);
 
   font-weight: 600;
   font-size: 24px;

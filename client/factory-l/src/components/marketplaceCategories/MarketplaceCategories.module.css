@@ -7,8 +7,18 @@
     /* padding: 20px; */
 
 }
+.title{
+    text-align: left;
+    position: relative;
+    font-size: 28px;
+    left: 52px;
+    font-weight: 600;
+}
+.title h2{
+    margin-top: -20px;
+}
 .categoriesList a{
-    color: black;
+    color: rgb(4, 30, 63);
     margin: 0px;
 }
 .categoriesList a:hover{
@@ -26,7 +36,7 @@
     margin: 0px 0px 10px;
 }
 .categoriesList h6{
-    color:#9DC2E6;
+    color:#5e656b;
     margin: 0px 0px 10px;
     font-size: 20px;
 

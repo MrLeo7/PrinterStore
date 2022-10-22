@@ -1,0 +1,51 @@
+.links {
+  text-align: left;
+  padding: 30px;
+  font-family: "Karla", sans-serif;
+}
+.header {
+  color: white;
+  background-color: #ff4b5a;
+  height: 65px;
+  width: 100%;
+  margin: 0;
+  font-size: 28px;
+  padding-top: 20px;
+  font-family: 'Archivo Black', sans-serif;
+
+}
+
+.links p a {
+  color: #394157;
+  font-weight: 500;
+  font-size: 20px;
+  
+}
+.links p {
+  margin-bottom: 35px;
+  
+}
+
+.close {
+  position: absolute;
+  top: 24px;
+  left: 20px;
+}
+.close button {
+    font-family: 'Archivo Black', sans-serif;
+
+  font-size: 28px;
+  border: none;
+  background-color: #ff4b5a;
+  border-radius: 10px;
+  color: #0b1636;
+}
+.close button:hover {
+  cursor: pointer;
+}
+
+.iconButton {
+    
+  margin-left: 10px;
+  padding: 10px;
+}

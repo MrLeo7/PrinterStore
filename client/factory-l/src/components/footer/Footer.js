@@ -5,7 +5,7 @@ import CustomButton from "../customButton/CustomButton";
 const Footer = () => {
   return (
     <footer>
-      <section className={classes.row}>
+      <section className={classes.container}>
         <div className={classes.leftDiv}>
           <h2>Ready to get started?</h2>
           <p className={classes.p}>
@@ -15,7 +15,9 @@ const Footer = () => {
           <CustomButton text="Contact" />
         </div>
         <div className={classes.rightDivs}>
+
             <div className={classes.footerColumn} >
+
                 <h2>Services</h2>
                 <p> <a  href=""> 3D Design</a></p>
                 <p> <a  href=""> 3D Printing</a></p>
@@ -24,6 +26,7 @@ const Footer = () => {
                 <p> <a  href=""> Marketplace</a></p>
             </div>
             
+
            
             <div className={classes.footerColumn} >
                 <h2>Support</h2>
@@ -31,7 +34,7 @@ const Footer = () => {
                 <p> <a  href=""> Help Center</a></p>
                 <p> <a  href=""> 3D Materials Guide</a></p>
                 <p> <a  href=""> For Students</a></p>
-            </div>
+              </div>
             <div className={classes.footerColumn} >
                 <h2>Shapeways</h2>
                 <p> <a  href=""> About</a></p>

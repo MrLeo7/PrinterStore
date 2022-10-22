@@ -8,20 +8,27 @@ const MarketplaceCategories = () => {
     <div className={classes.main}>
       <section className={classes.categoriesList}>
         <h6>Categories</h6>
-        <ul >
+        <ul>
           <li>
-            <div className={classes.arrow}> </div><Link to='tech'>Tech</Link>
+            <div className={classes.arrow}> </div>
+            <Link to="tech">Tech</Link>
           </li>
 
           <li>
-            <div className={classes.arrow}> </div><Link to='games'>Games</Link>
+            <div className={classes.arrow}> </div>
+            <Link to="games">Games</Link>
           </li>
           <li>
-            <div className={classes.arrow}> </div><Link to='miniatures'>Miniatures</Link>
+            <div className={classes.arrow}> </div>
+            <Link to="miniatures">Miniatures</Link>
           </li>
         </ul>
       </section>
       <section className={classes.content}>
+        <div className={classes.title}>
+
+        <h2>Factory L 3D Printing Marketplace</h2>
+        </div>
         <div className={classes.categoriesWithImages}>
           <CategoryItem
             item1="Cars"

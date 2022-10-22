@@ -1,96 +1,131 @@
-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    background: rgb(14,26,65);
-    background: radial-gradient(circle, rgba(14,26,65,1) 0%, rgba(6,39,79,1) 100%);
-    height: 100px;
-    align-items: center;
-    
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  
+  background: rgb(14, 26, 65);
+  background: radial-gradient(
+    circle,
+    rgba(14, 26, 65, 1) 0%,
+    rgba(6, 39, 79, 1) 100%
+  );
+  height: 100px;
+  align-items: center;
+}
+.drawer {
+  color: white;
 }
 
-.navLinks{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+nav h1{
+  text-align: left;
 }
-a{
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  margin: 2rem;
+}
+
+a:hover {
+  color: #ff4b5a;
+}
+
+.shoppingCart {
+  margin-right: 25px;
+  /* color: #5e717c; */
+  color: white;
+  background-color: rgba(255, 255, 255, 0.199);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.shoppingCart sup {
+  font-size: 20px;
+  position: relative;
+  top: -5px;
+  color:#ff4b5a;
+
+}
+
+
+@media (max-width: 1200px) {
+ 
+  nav h1{
+    text-align: left;
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  a {
     text-decoration: none;
     color: white;
     cursor: pointer;
+    margin: 20px;
+  }
+  nav h1{
+    text-align: center;
+  }
+
+  .shoppingCart {
+    display: flex;
+    margin-right: 15px;
+    /* color: #5e717c; */
+    color: rgb(58, 59, 68);
+  }
+  .shoppingCart sup{
+    font-size: 20px;
+    position: relative;
+    top: -5px;
+    font-family: "Karla", sans-serif;
+  }
+}
+
+@media (max-width: 668px) {
+  a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    margin: 20px;
+  }
+  .navLinks {
+    display: none;
+  }
+  nav h1 {
+    
+    margin: auto;
+    font-size: 28px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    margin: 1rem;
+  }
+
+  nav {
+    height: 70px;
+    background: rgb(253, 253, 253);
+  }
+
+  .drawer {
+    color: #5e717c;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(14, 26, 65);
+    cursor: pointer;
     margin: 2rem;
+  }
 }
-
-a:hover{
-  color:#FF4B5A;
-}
-
-.span {
-  position: absolute;
- 
-  
-  display: block;
-  color: #1bcf6c;
-  font-size: 60px;
-  letter-spacing: 8px;
-  cursor: pointer;
-  top:0px;
-  /* left: 30px; */
-  
-}
-
-.span::before {
-  content: "Factory";
-  position: absolute;
-  color: transparent;
-  background-image: repeating-linear-gradient(
-    45deg,
-    transparent 0,
-    transparent 2px,
-    rgba(255, 255, 255, 0.658) 2px,
-    rgb(255, 255, 255) 4px
-  );
-  -webkit-background-clip: text;
-  top: 0px;
-  left: 0;
-  z-index: -1;
-  transition: 1s;
-}
-
-.span::after {
-  content: "Factory L";
-  position: absolute;
-  color: transparent;
-  background-image: repeating-linear-gradient(
-    135deg,
-    transparent 0,
-    transparent 2px,
-    rgb(199, 177, 177) 2px,
-    rgb(49, 238, 11) 4px
-  );
-  -webkit-background-clip: text;
-  top: 0px;
-  left: 0px;
-  transition: 1s;
-}
-
-.span:hover:before {
-  top: 10px;
-  left: 10px;
-}
-
-.span:hover:after {
-  top: -10px;
-  left: -10px;
-} 
-
-
-@media (max-width:768px){
-    a{
-        text-decoration: none;
-        color: white;
-        cursor: pointer;
-        margin: 20px;
-    }
+@media (min-width: 668px) {
+  .drawer {
+    display: none;
+  }
 }
