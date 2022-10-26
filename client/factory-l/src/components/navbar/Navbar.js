@@ -2,8 +2,8 @@ import React from "react";
 import classes from "./Navbar.module.css";
 import { Link } from "react-router-dom";
 import MuiDrawer from "../drawer/MuiDrawer";
-import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
+import ShoppingCart from "../shoppingCart/ShoppingCart";
 const Navbar = () => {
   return (
     <nav>
@@ -28,10 +28,7 @@ const Navbar = () => {
         </p>
       </div>
       <div className={classes.shoppingCart}>
-        <ShoppingCartOutlinedIcon color="inherit" fontSize="medium" />
-        
-          <sup>1</sup>
-        
+        <ShoppingCart />
       </div>
     </nav>
   );

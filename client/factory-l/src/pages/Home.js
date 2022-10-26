@@ -15,7 +15,6 @@ const Home = () => {
       <Statistics />
       <OurServices />
       <MaterialList />
-      <Footer />
     </>
   );
 };

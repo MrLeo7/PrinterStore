@@ -1,0 +1,13 @@
+.uploadForm{
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    margin: auto;
+    max-width: 600px;
+    
+}
+
+
+.wrapper{
+    padding: 40px;
+}

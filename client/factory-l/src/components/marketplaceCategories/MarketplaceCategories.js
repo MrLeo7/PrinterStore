@@ -26,8 +26,7 @@ const MarketplaceCategories = () => {
       </section>
       <section className={classes.content}>
         <div className={classes.title}>
-
-        <h2>Factory L 3D Printing Marketplace</h2>
+          <h2>Factory L 3D Printing Marketplace</h2>
         </div>
         <div className={classes.categoriesWithImages}>
           <CategoryItem
@@ -57,6 +56,9 @@ const MarketplaceCategories = () => {
             item1="Figurines"
             item2="Vehicles"
             item3="Ships"
+            link1="miniatures/figurines"
+            link2="miniatures/vehicles"
+            link3="miniatures/ships"
             title="Miniatures"
             link="miniatures"
             image="https://images1.sw-cdn.net/cdn-cgi/image/quality=85,gravity=auto,format=auto,fit=scale-down,width=1920/product/picture/625x465_13553413_8232332_1462019511.jpg"

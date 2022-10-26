@@ -1,0 +1,45 @@
+.main {
+  margin-left: 5%;
+  width: 70%;
+  text-align: left;
+  max-width: 800px;
+  margin: 100px ;
+}
+
+.title {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 40px;
+  color: rgb(25, 25, 61);
+  padding: 0px;
+  margin: 0px;
+}
+
+.pAndBox {
+  display: flex;
+  flex-direction: row;
+}
+.verticalBox {
+  margin: 15px 0px;
+  width: 3px;
+  background-color: #ff4b5a;
+  margin-right: 10px;
+}
+
+.description {
+  font-family: "Karla", sans-serif;
+  max-width: 100%;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 33px;
+}
+
+
+@media (max-width: 1024px) {
+
+    .main {
+  margin-left: 5%;
+  width: 70%;
+  text-align: left;
+  max-width: 450px;
+}
+}

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const CategoryItem = (props) => {
   return (
     <div className={classes.main} >
-        <img src={props.image} alt='decorative'  />
+        <img src={props.image} alt='decorative' loading='lazy' />
         <h3><Link to={props.link}> {props.title}</Link></h3>
         <ul>
             <li><Link to={props.link1}> {props.item1}</Link>  </li>

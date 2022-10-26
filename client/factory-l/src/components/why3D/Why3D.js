@@ -7,7 +7,7 @@ export const Why3D = () => {
       <h2>Why 3D Printing?</h2>
       <div className={classes.sectionsDiv}>
         <ListItem
-          image="/assets/3dPirnter_drawing.jpg"
+          image="https://i.ibb.co/FYMxZGN/3d-Pirnter-drawing.webp"
           width="200"
           height="200"
           text=" Don't waste time putting products together! Rely on 3D printing to
@@ -16,7 +16,7 @@ export const Why3D = () => {
           title="Reduce Assembly Time"
         />
         <ListItem
-          image="/assets/clock_drawing.jpg"
+          image="https://i.ibb.co/r6MrG30/clock-drawing.webp"
           width="225"
           height="200"
           text=" Working on a project for a customer that has to be just right? Get
@@ -26,7 +26,7 @@ export const Why3D = () => {
         />
 
         <ListItem
-          image="/assets/badge_drawing.jpg"
+          image="https://i.ibb.co/GQCMt39/badge-drawing.webp"
           width="200"
           height="200"
           text="Proprietary processes, expert 3D printing operators, and inspections

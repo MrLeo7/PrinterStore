@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Gurajada&family=Montserrat:wght@300&family=Open+Sans:ital@0;1&family=Roboto+Flex:opsz@8..144&family=Roboto:wght@700&display=swap");
 
 .wrapper {
   display: flex;
@@ -18,6 +17,10 @@
   /* margin-left: 80px; */
 }
 
+.contaier{
+  display: flex;
+  flex-direction: column;
+}
 .sectionsDiv {
   display: flex;
   flex-direction: row;

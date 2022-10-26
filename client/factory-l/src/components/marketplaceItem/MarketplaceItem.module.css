@@ -1,0 +1,23 @@
+.itemCard {
+  width: 100%;
+  height: 200px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.itemName {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+}
+.price {
+  font-family: "Noto Sans", sans-serif;
+  color: rgba(0, 0, 0, 0.781);
+  /* font-weight: 600; */
+}
+
+.creator {
+  font-family: "Karla", sans-serif;
+  color: rgba(0, 0, 0, 0.781);
+}

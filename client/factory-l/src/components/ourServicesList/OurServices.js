@@ -8,7 +8,7 @@ const OurServices = () => {
       <h2>Our Services</h2>
       <div className={classes.sectionsDiv}>
         <ListItem
-          image="/assets/production_parts.jpg"
+          image="https://i.ibb.co/5LLQdPs/production-parts.webp"
           width="400"
           height="400"
           text=" Upload customized models for 3D printing service—ensuring durability and strength in materials that result in end-use products meant to last."
@@ -16,7 +16,7 @@ const OurServices = () => {
           buttonLink="production"
         />
         <ListItem
-          image="/assets/finishes.jpg"
+          image="https://i.ibb.co/QbrfKdF/finishes.webp"
           width="400"
           height="400"
           text="Whether designers prefer polishing, smoothing, dyeing–or a combination of finishing techniques–Factory L 3D printing services can perfect those final touches with shine, gloss, and color."
@@ -25,7 +25,7 @@ const OurServices = () => {
         />
 
         <ListItem
-          image="/assets/prototyping.jpg"
+          image="https://i.ibb.co/zS6qzHm/prototyping.webp"
           width="400"
           height="400"
           text="Take the guesswork out of product development with 3D printing services for high-performance models used in meetings, testing, and perfection of final parts."

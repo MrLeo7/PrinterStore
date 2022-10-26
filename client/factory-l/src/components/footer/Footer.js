@@ -12,7 +12,9 @@ const Footer = () => {
             From product development to industrial 3D manufacturing, we can help
             you scale your business.
           </p>
-          <CustomButton text="Contact" />
+          <CustomButton text="Contact" 
+          name='contact'
+          />
         </div>
         <div className={classes.rightDivs}>
 

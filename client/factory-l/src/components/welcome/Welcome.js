@@ -19,12 +19,17 @@ function Welcome() {
           </div>
           <div className={classes.buttons}>
            <CustomButton 
-           text='Get a Quote'/>
+           name='quote'
+           text='Get a Quote'
+           width='200px'/>
           </div>
         </article>
 
         <div className={classes.image}>
-          <img src="/assets/welcome_logo_tra.png" />
+          
+        {/* <img src="https://i.ibb.co/QJRPZvd/welcome-logo-tra.webp" alt="welcome-logo-tra" border="0" loading="lazy"> */}
+
+          {/* </img> */}
         </div>
       </div>
     </div>

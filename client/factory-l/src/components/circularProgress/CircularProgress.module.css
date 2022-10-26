@@ -1,0 +1,14 @@
+.wrapper {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  position: relative;
+ 
+}
+.category{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}

@@ -13,6 +13,8 @@
     font-size: 28px;
     left: 52px;
     font-weight: 600;
+    font-family: "Archivo Black", sans-serif;
+    color: #0E1A41;
 }
 .title h2{
     margin-top: -20px;
@@ -81,4 +83,33 @@
     height: 500px;
     background-color: grey;
     width: auto;
+  }
+
+  @media (max-width:1200px){
+
+    .categoriesList{
+        display: none;
+    }
+
+    .categoriesWithImages{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    
+      }
+
+      .title{
+        text-align: center;
+        position: relative;
+        font-size: 18px;
+        left: 0px;
+        font-weight: 400;
+        
+    }
+
+    .content{
+        width: 100%;
+        padding: 20px 10px;
+    }
   }
