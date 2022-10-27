@@ -34,7 +34,7 @@ function DragAndDrop(props) {
       var reader = new FileReader();
       reader.readAsDataURL(acceptedFiles[0]);
       reader.onload = function () {
-        localStorage.setItem("image", reader.result);
+        // localStorage.setItem("image", reader.result);
         //returns uploaded image and boolean to tell if it is empty or not
         props.onChange(reader.result, files.length > 0);
       };
@@ -60,7 +60,7 @@ function DragAndDrop(props) {
       >
         <input {...getInputProps()} />
         <div className={classes.dragText}>
-          Choose an Image or drag it here:{" "}
+          {props.text}{" "}
         </div>
         <div className={classes.buttonAndText}>
           <button className={classes.dragButton} onClick={uploadHandler}>

@@ -49,7 +49,9 @@ const UploadItem = () => {
     <TextField margin="dense" id='subCategory'label='subCategory'onChange={(e)=>{setItem({...item, subCategory:e.target.value})}}/>
     <TextField margin="dense" id='price' label='price' onChange={(e)=>{setItem({...item, price:e.target.value})}} />
     <TextField margin="dense" id='description'label='description'onChange={(e)=>{setItem({...item, description:e.target.value})}}/>
-    <DragAndDrop onChange={(e)=>{setItem({...item, image:e})}}/>
+    <DragAndDrop onChange={(e)=>{setItem({...item, image:e})}}
+    text='Choose an Image or drag it here:'
+    />
 
     <CustomButton
     onClick={submitHandler} 

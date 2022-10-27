@@ -1,9 +1,12 @@
 import React from "react";
 import classes from "./Welcome.module.css";
+import { useNavigate } from "react-router";
 import CustomButton from "../customButton/CustomButton";
 
 
 function Welcome() {
+
+  const navigate = useNavigate();
   return (
     <div className={classes.main}>
       <div className={classes.welcomeArticleAndImage}>
@@ -19,6 +22,7 @@ function Welcome() {
           </div>
           <div className={classes.buttons}>
            <CustomButton 
+           onClick={()=>{navigate('/quote')}}
            name='quote'
            text='Get a Quote'
            width='200px'/>
