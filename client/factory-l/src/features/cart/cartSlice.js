@@ -1,6 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
+
 
 
 const initialState = {
@@ -9,14 +8,15 @@ const initialState = {
   total: 0,
 };
 
-if(localStorage.getItem('cart')){
-    initialState.cartItems=JSON.parse(localStorage.getItem('cart'))
-}
+// if(localStorage.getItem('cart')){
+//   cartItems=JSON.parse(localStorage.getItem('cart'))
+// }
 
 const cartSlice = createSlice({
   name: "cart",
   initialState,
   reducers: {
+
     addItem: (state, action) => {
       const itemInCart = state.cartItems.find(
         (item) => item._id === action.payload._id
@@ -48,6 +48,9 @@ const cartSlice = createSlice({
       );
       state.cartItems = removeItem;
     },
+    setItemsFromCart:(state,action)=>{
+      state.cartItems = action.payload;
+    }
   },
 });
 

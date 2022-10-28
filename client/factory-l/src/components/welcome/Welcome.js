@@ -22,7 +22,7 @@ function Welcome() {
           </div>
           <div className={classes.buttons}>
            <CustomButton 
-           onClick={()=>{navigate('/quote')}}
+          //  onClick={()=>{navigate('/quote')}}
            name='quote'
            text='Get a Quote'
            width='200px'/>

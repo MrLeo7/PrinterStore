@@ -9,16 +9,16 @@ import Footer from "./components/footer/Footer";
 import UploadItem from "./components/uploadItem/UploadItem";
 import ProductPage from "./components/productPage/ProductPage";
 import ShoppingCartExpanded from "./components/shoppingCartExpnded/ShoppingCartExpanded";
-import StlCalculator from "./components/StlCalculator/StlCalculator";
-import StlViewerV2 from "./components/stlViewer/StlViewerV2";
+// import StlViewerV2 from "./components/stlViewer/StlViewerV2";
 import MarketplaceItemsList from "./components/marketplaceItemsList/MarketplaceItemsList";
+
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Navbar />  
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />        
         <Route path="/materials" element={<Materials />} />
         <Route path="/marketplace" element={<Marketplace />} />
         <Route path="/about" element={<About />} />
@@ -27,16 +27,11 @@ function App() {
         <Route path="/marketplace/:category/:subCategory" element={<MarketplaceItemsList />} />
         <Route path="/products/:id" element={<ProductPage />} />
         <Route path="/cart" element={<ShoppingCartExpanded />} />
-        <Route path="/quote" element={<StlViewerV2 />} />
-
-
-
-
-
-
-
-      </Routes>
+        <Route path="/cart/:id" element={<ShoppingCartExpanded />} />        
+        {/* <Route path="/quote" element={<StlViewerV2 />} />  */}
+        </Routes>
         <Footer />
+      
     </div>
   );
 }

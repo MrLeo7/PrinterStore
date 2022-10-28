@@ -11,8 +11,19 @@
 
 
 .breadCrumbs{
+    font-family: 'Archivo Black', sans-serif;
+
     width: 100%;
     height: 35px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.breadCrumbs a{
+    color: rgb(35, 35, 99);
+    font-size: 20px;
+    text-align: left;
+    
 }
 
 .imageAndDescription{
@@ -130,6 +141,8 @@ font-size: 15px;
     width: 60%;
     margin: 20px 5px;
 }
+
+
 
 @media (max-width:1024px){
 

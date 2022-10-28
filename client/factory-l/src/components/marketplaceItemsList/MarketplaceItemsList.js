@@ -5,6 +5,12 @@ import axios from "axios";
 import { useParams } from "react-router";
 import CircularIndeterminate from "../circularProgress/CircularProgress";
 import { Link } from "react-router-dom";
+
+
+const API_URL ='https://factory-l.herokuapp.com/'
+
+
+
 const MarketplaceItemsList = () => {
   const params = useParams();
   let category = params.category;
@@ -17,11 +23,13 @@ const MarketplaceItemsList = () => {
   let categoryLink = `/marketplace/${category}`;
   let subCategoryLink = `/marketplace/${subCategory}`;
 
+
+  
   useEffect(() => {
     if (!subCategory) {
       setLoading(true);
       axios
-        .get("http://localhost:5000/api/products", {
+        .get(API_URL+"api/products", {
           params: {
             category: category,
           },
@@ -34,7 +42,7 @@ const MarketplaceItemsList = () => {
     } else if (subCategory) {
       setLoading(true);
       axios
-        .get("http://localhost:5000/api/products", {
+        .get(API_URL+"api/products", {
           params: {
             subCategory: subCategory,
           },

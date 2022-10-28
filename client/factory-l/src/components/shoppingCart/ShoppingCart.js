@@ -1,36 +1,47 @@
 import React, { useState } from "react";
 import classes from "./ShoppingCart.module.css";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
-import { useSelector } from "react-redux";
+import { useSelector ,useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
 import { useEffect } from "react";
+import { cartActions } from "../../features/cart/cartSlice";
 
 const ShoppingCart = () => {
   const navigate = useNavigate();
-  const [cartClass,setCartClass] = useState(classes.shoppingCart)
-  const itemNumber = useSelector((state) => state.cart.cartItems.length);
+  const dispatch = useDispatch();
+  const [cartClass, setCartClass] = useState(classes.shoppingCart);
+
   const cartItems = useSelector((state) => state.cart.cartItems);
+  console.log(cartItems)
   useEffect(() => {
-    
+    if (cartItems ) {
       localStorage.setItem("cart", JSON.stringify(cartItems));
-      let cartItem = localStorage.getItem("cart");
-      console.log(cartItems);
-    
+      console.log('storage updated')
+    }
+    let cartItem = JSON.parse(localStorage.getItem("cart"));
+    if(cartItems==null){
+      dispatch(cartActions.setItemsFromCart(cartItem))
+      console.log('storage supplied from local')
+    }
+    console.log(cartItems);
+
+    setCartClass(classes.shoppingCartAnimated);
+    setTimeout(() => {
+      setCartClass(classes.shoppingCart);
+    }, 900);
   }, [cartItems]);
 
- 
-  useEffect(()=>{
-    setCartClass(classes.shoppingCartAnimated)
-    setTimeout(()=>{setCartClass(classes.shoppingCart)},900)
-  },[cartItems])
   return (
-  
-      <div className={cartClass} onClick={() => { navigate("/cart")}}>
-        <ShoppingCartOutlinedIcon color="inherit" fontSize="medium" />
+    <div
+      className={cartClass}
+      onClick={() => {
+        navigate("/cart");
+      }}
+    >
+      <ShoppingCartOutlinedIcon color="inherit" fontSize="medium" />
 
-        <sup>{itemNumber}</sup>
-      </div>
-    
+     {cartItems&&<sup>{cartItems.length}</sup>}
+    </div>
   );
 };
 

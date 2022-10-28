@@ -4,10 +4,15 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router";
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 import { cartActions } from "../../features/cart/cartSlice";
+import { useNavigate } from "react-router";
+
+const API_URL = "https://factory-l.herokuapp.com/";
 
 const ProductPage = () => {
-    const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
   const params = useParams();
   let id = params.id;
   const [item, setItem] = useState({});
@@ -15,15 +20,14 @@ const ProductPage = () => {
 
   const clickHandler = (e) => {
     e.preventDefault();
-    console.log(item)
-    dispatch(cartActions.addItem(item))
-
+    console.log(item);
+    dispatch(cartActions.addItem(item));
+    navigate(`/cart/${item._id}`)
   };
 
-  
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/products", {
+      .get(API_URL + "api/products", {
         params: {
           id: id,
         },
@@ -36,12 +40,15 @@ const ProductPage = () => {
       });
   }, []);
 
-  const handleChange = (event) => {
-    setQuantity(event.target.value);
-  };
+
+let linkToSubCategory=`/marketplace/${item.category +'/'+item.subCategory}`;
+
+
   return (
     <div className={classes.main}>
-      <div className={classes.breadCrumbs}></div>
+      <div className={classes.breadCrumbs}>
+        <Link to={linkToSubCategory}>{item.subCategory} </Link>
+      </div>
       <div className={classes.imageAndDescription}>
         <div className={classes.image}>
           <img src={item.image} />

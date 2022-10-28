@@ -24,6 +24,25 @@
   padding: 10px 10px;
 }
 
+.newItem{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.newItemContent{
+  font-family: 'Karla', sans-serif;
+  font-size: 20px;
+
+  padding: 20px;
+}
+.newItemContent a{
+  color: rgb(16, 16, 54);
+}
+
+.newItem h3{
+  margin-right: 20px;
+}
+
 @media (max-width: 1024px) {
     .checkout {
        margin-top: auto;
@@ -45,5 +64,10 @@
 @media (max-width: 668px) {
   .items h1 {
     font-size: 28px;
+  }
+
+  .newItemContent a{
+   
+    margin: 0px;
   }
 }

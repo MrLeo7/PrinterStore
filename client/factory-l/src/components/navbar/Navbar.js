@@ -15,15 +15,15 @@ const Navbar = () => {
       </h1>
       <div className={classes.navLinks}>
         <p>
-          {" "}
+          
           <Link to="marketplace"> MARKETPLACE </Link>
         </p>
         <p>
-          {" "}
+         
           <Link to="about"> ABOUT </Link>
         </p>
         <p>
-          {" "}
+       
           <Link to="materials"> MATERIALS </Link>
         </p>
       </div>

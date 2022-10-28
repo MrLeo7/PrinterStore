@@ -7,8 +7,11 @@ import CustomButton from '../customButton/CustomButton';
 import DragAndDrop from '../dragAndDrop/DragAndDrop';
 
 
+const API_URL ='https://factory-l.herokuapp.com/'
+
 const UploadItem = () => {
 
+    
     const [item,setItem] = useState({
         name:'',
         category:'',
@@ -22,7 +25,7 @@ const UploadItem = () => {
     const submitHandler = (e)=>{
         e.preventDefault();
         console.log(item)
-        axios.post("http://localhost:5000/api/products", item).then(res=>{
+        axios.post(API_URL + "api/products", item).then(res=>{
             console.log(res)
             setItem({
                 name:'',

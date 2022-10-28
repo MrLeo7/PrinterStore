@@ -3,7 +3,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  
+
   background: rgb(14, 26, 65);
   background: radial-gradient(
     circle,
@@ -17,14 +17,15 @@ nav {
   color: white;
 }
 
-nav h1{
+nav h1 {
   text-align: left;
+  
 }
 .navLinks {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left:auto;
+  margin-left: auto;
 }
 a {
   text-decoration: none;
@@ -37,12 +38,8 @@ a:hover {
   color: #ff4b5a;
 }
 
-
-
-
 @media (max-width: 1200px) {
- 
-  nav h1{
+  nav h1 {
     text-align: left;
     font-size: 32px;
   }
@@ -55,17 +52,17 @@ a:hover {
     cursor: pointer;
     margin: 20px;
   }
-  nav h1{
+  nav h1 {
     text-align: center;
   }
 
   .shoppingCart {
     display: flex;
-    margin-right: 15px;
+    margin-right: 10px;
     /* color: #5e717c; */
     color: rgb(58, 59, 68);
   }
-  .shoppingCart sup{
+  .shoppingCart sup {
     font-size: 20px;
     position: relative;
     top: -5px;
@@ -84,9 +81,10 @@ a:hover {
     display: none;
   }
   nav h1 {
-    
     margin: auto;
-    font-size: 28px;
+    font-size: 26px;
+    letter-spacing: 0.41px;
+    
   }
   a {
     text-decoration: none;
